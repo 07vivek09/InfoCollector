@@ -6,12 +6,6 @@ export const DoStoreUserDetailsAction =(action)=>{
         .then(data=>data.data)
         .then(response =>{
             if(response){
-                // localStorage.setItem("userData",JSON.stringify(response))
-                // Storage.storeUserData(response)
-                // dispatch({
-                //     type:SAVE_USER,
-                //     payload:response,
-                // })
                 dispatch({
                     type:SHOW_MESSAGE,
                     payload:{
