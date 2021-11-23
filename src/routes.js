@@ -1,10 +1,11 @@
 import React from "react";
-import CreateUpdateDeleteForm from "./view/FormManagement";
+import CreateUpdateDeleteForm from "./view/CreateNewForm";
 import PreviewForm from './view/FormPreview/index'
 import SignUp from "./view/Auth/SignUp";
 import Login from "./view/Auth/Login";
 import image from '../src/images/bg6.jpg'
 import Layout from "../src/layout"
+// import FormManagement from "./view/FormManagement";
 const formTemplateObject = {
   image: <img alt="image" src={image} width="100%" height="250px" />,
   name: "liya", color: " #23297a", border: '3px solid #23297a',

@@ -1,1 +1,13 @@
-// http://localhost:8000/fieldType
+import axios from "axios"
+
+const DoGetFormTypes = userData =>{
+    return axios.get("formType",userData);
+}
+
+
+
+const API =  {
+    DoGetFormTypes
+}
+
+export default API;

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{useEffect} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -11,16 +11,20 @@ import Tab from '@mui/material/Tab';
 import PhoneIcon from '@mui/icons-material/Phone';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
-
+import {DoGetFormTypesAction} from "../redux/actions/FormActions"
 export default function DenseAppBar() {
     const [value, setValue] = React.useState(0);
+    const dispatch = useDispatch()
     const tabs = useSelector((state)=>state.nav && state.nav.tabs)
     const navigate = useNavigate()
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+    useEffect(() => {
+        dispatch(DoGetFormTypesAction())
+    }, [])
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
