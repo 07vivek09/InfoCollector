@@ -21,7 +21,7 @@ export default function OtpComponent({backClickHandler,otp,changeOTPHandler,veri
                 onChange={changeOTPHandler}
                 numInputs={6}
                 isInputNum={true}
-                separator={<span>-</span>}
+                separator={<span> </span>}
                 inputStyle={{ width: "70%", border: 0, borderBottom: "1px solid black", height: "150%" }}
                 focusStyle={{ outline: "none" }}
             />

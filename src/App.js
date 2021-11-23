@@ -1,10 +1,7 @@
 import React from "react"
 import { useRoutes } from "react-router-dom"
 import appRoutes from "./routes";
-
-
-
-
+import Snackbar from "../src/components/Snackbar"
 import CreateUpdateDeleteForm from "./view/FormManagement";
 // import  Snackbar from "./components/Snackbar";
 import { useSelector } from "react-redux"
@@ -16,7 +13,7 @@ function App() {
   return (
     <div className="App">
       {routing}
-      {/* <Snackbar /> */}
+      <Snackbar />
 
       
       {/* <PreviewForm data={[{name:"liya", color:"red"}]}/> */}
