@@ -8,3 +8,4 @@ export const ERROR = "error"
 export const UI_LOADING="ui_loading"
 //Sign In
 export const SAVE_USER = "save_user"
+export const USERS_LIST = "users_list"

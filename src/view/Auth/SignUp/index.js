@@ -23,7 +23,7 @@ export default function SignUp() {
           let refObj = findLast(ui["messages"], { key: "save_user_details" });
           //change error to success once server is attached
           if (refObj && refObj.type === "success") {
-            navigation("/login")
+            navigation("/")
           }
         }
       }, [ui])
