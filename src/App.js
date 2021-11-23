@@ -1,15 +1,15 @@
 import React from "react"
 import {useRoutes} from "react-router-dom"
 import appRoutes from "./routes";
+import CreateUpdateDeleteForm from "./view/FormManagement";
 // import  Snackbar from "./components/Snackbar";
 import {useSelector} from "react-redux"
 function App() {
-  // const showLayout = useSelector((data)=>data.auth && data.auth.isLoggedIn)
-  // const routing = useRoutes(appRoutes(showLayout))
+  const showLayout =true
+  const routing = useRoutes(appRoutes(showLayout))
   return (
     <div className="App">
-      Hi
-      {/* {routing} */}
+            {routing}
       {/* <Snackbar /> */}
     </div>
   );
