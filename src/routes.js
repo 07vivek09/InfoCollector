@@ -34,20 +34,24 @@ const appRoutes = (data) => {
       path: "/signup",
       element: <SignUp />
     },
+    // data && data === true?
     {
-      path:"/home",
+      path:"/",
       element:<Layout />,
-      // children:[
-      //     {
-      //         path :"/createForm",
-      //         element:<CreateUpdateDeleteForm />
-      //     },
-      //     {
-      //       path: "/previewForm",
-      //       element: <PreviewForm templateFormat={formTemplateObject} />
-      //     },
-      //   ]
-      },
+      children:[
+          {
+              path :"/home",
+              element:<CreateUpdateDeleteForm />
+          },
+          {
+            path: "/previewForm",
+            element: <PreviewForm templateFormat={formTemplateObject} />
+          },
+        ]
+      }
+    // }:null,
+   
+      
 
     // {
     //   path: "/createForm",
