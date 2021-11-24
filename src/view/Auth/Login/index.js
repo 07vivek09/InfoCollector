@@ -78,6 +78,7 @@ export default function Login() {
                             fullWidth
                             id={"pswd"}
                             name={"pswd"}
+                            type={"password"}
                             onChange={formik.handleChange}
                             style={{ marginBottom: "5%" }}
                             error={(formik.touched.pswd && Boolean(formik.errors.pswd)) }

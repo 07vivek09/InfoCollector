@@ -8,7 +8,7 @@ export default function FormReducer(state = initialState,actions){
     switch(actions.type){
         case FORM_TYPES :{
             newState.formTypes = actions.payload
-            return newState;
+            return {...newState};
         }
         default:{
             return newState;

@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { TextField, Typography, Button, Box, Grid, Paper } from '@material-ui/core';
 import { DoGetFormTypesAction } from "../../redux/actions/FormActions"
 import { useDispatch, useSelector } from 'react-redux';
+import CreateUpdateDeleteForm from './AddNewForm';
 const useStyles = makeStyles((theme) => ({
     root: {
 
@@ -41,6 +42,9 @@ export default function FormManagement() {
                     ))
                 }
                 </Grid>
+                {/* <Grid container spacing={2}> */}
+<CreateUpdateDeleteForm />
+                {/* </Grid> */}
             </Paper>
         </Box>
     );

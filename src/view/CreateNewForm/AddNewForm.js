@@ -115,7 +115,8 @@ export default function CreateUpdateDeleteForm() {
                 {questions && questions.map(item => 
                     <ShowField 
                     fieldValue ={item.field}
-                    fieldTypesInput ={item.fieldType}/>
+                    fieldTypesInput ={item.fieldType}
+                    options = {item.options}/>
                 )}
             </Grid>
 

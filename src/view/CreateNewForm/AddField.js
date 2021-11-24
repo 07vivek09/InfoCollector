@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Dropdown from '../../components/Dropdown';
+import AddIcon from '@mui/icons-material/Add';
 import { TextField, Button, Box, Grid, Paper, MenuItem, Select, RadioGroup, Radio, ClickAwayListener, Typography } from '@material-ui/core';
 import AddOptionComponent from "../../components/AddOptionComponent";
 import ShowOptionComponent from "../../components/ShowOptionComponent";
@@ -65,7 +66,7 @@ export default function AddField({ field, changeFieldHandler, fieldTypes = [], c
         <Paper elevation={2} style={{ padding: "5%" }}>
             <Grid spacing={1} container>
                 <Grid item xs={7}>
-                    <TextField id="standard-basic" label="Standard" fullWidth value={field} onChange={changeFieldHandler} variant="standard" />
+                    <TextField style={{marginTop:"2%"}} id="standard-basic" label="Enter Field" fullWidth value={field} onChange={changeFieldHandler} variant="standard" />
                 </Grid>
                 <Grid item xs={4}>
                     <Dropdown
@@ -82,7 +83,7 @@ export default function AddField({ field, changeFieldHandler, fieldTypes = [], c
                     />
                 </Grid>
                 <Grid item xs={1}>
-                    <Button variant="contained" onClick={addQuestionHandler}>+</Button>
+                    <Button variant="contained" style={{height:"80%"}}onClick={addQuestionHandler}><AddIcon /></Button>
                 </Grid>
             </Grid>
             <Box>
