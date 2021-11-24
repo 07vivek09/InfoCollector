@@ -26,16 +26,16 @@ const useStyles = makeStyles((theme) => ({
     head: {
         'textAlign': 'center',
         'border': '3px solid black',
-        'margin-left': '10%',
-        'margin-right': '10%',
+        'margin-left': '25%',
+        'margin-right': '25%',
         'margin-top': '10%',
         'margin-bottom': '30px'
 
     },
     body: {
        
-        'margin-left': '10%',
-        'margin-right': '10%',
+        'margin-left': '25%',
+        'margin-right': '25%',
         'margin-top': '20px',
         'margin-bottom': '30px',
         'padding-bottom': '2%',
@@ -179,9 +179,9 @@ const useStyles = makeStyles((theme) => ({
     // Return JSX code
     return (
       
-        <div style={{backgroundColor:'#f5f5f5'}}>
+        <div style={{backgroundColor:templateFormat.backgroundColor? templateFormat.backgroundColor:"white"}}>
           
-                <div style={{ height:"150px", marginLeft:"10%",marginRight:"10% " } } >
+                <div style={{ height:"150px", marginLeft:"25%",marginRight:"25% " } } >
                 
                 {templateFormat.image ? templateFormat.image :null} 
                 
@@ -190,12 +190,12 @@ const useStyles = makeStyles((theme) => ({
 
             <form id="formid"  onSubmit={handleSubmit}  >
                 <div className={classes.user}>
-                    <div className={classes.head} style={{ border: templateFormat.border}}>
+                    <div className={classes.head} style={{ border: templateFormat.border? templateFormat.border:"3px solid black"}}>
                         <h1>{data && data.FormName} </h1>
                         <h1>{data&& data.FormDescription} </h1>
                     </div>
                     {data&& data.Questions.map((user, key) => (
-                        <div className={classes.body} style={{  border: templateFormat.border}} >
+                        <div className={classes.body} style={{  border: templateFormat.border? templateFormat.border:"3px solid black"}} >
                             <FormLabel >{key + 1}  {user.Field}</FormLabel><br />
                             {renderSwitch(user.FieldType, user.options, key)}
                         </div>
@@ -208,7 +208,7 @@ const useStyles = makeStyles((theme) => ({
             
             <div className={classes.buttons}>
 
-                <Button variant="outlined" color="primary" className={classes.button} type="submit">Preview Response</Button>
+                <Button variant="outlined" color='primary' className={classes.button} type="submit">Preview Response</Button>
                 
                 <Button variant="outlined" color="primary" className={classes.button} onClick={handleClick} type="reset">Clear Response</Button>
             </div> <br/><br/>
