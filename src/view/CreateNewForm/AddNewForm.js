@@ -90,7 +90,7 @@ export default function CreateUpdateDeleteForm() {
  
     return (
         <Box style={{ margin: "5%", marginLeft: "10%", marginRight: "10%" }}>
-            <Button>Preview</Button>
+            {/* <Button>Preview</Button> */}
             <Box style={{ margin: "5%", marginLeft: "15%", marginRight: "15%", borderTop: "15px solid", borderTopColor: "green", borderRadius: "10%" }}>
                 <Paper elevation={2} style={{ padding: "5%" }}>
                 <TextField id="outlined-basic" fullWidth label="Form Name" variant="standard" />
