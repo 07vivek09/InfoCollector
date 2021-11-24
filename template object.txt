@@ -1,0 +1,82 @@
+Form TemplateObject
+
+---1.Registration form---
+{
+    image: <img alt="image" src={registrationimage} width="100%" height="250px"  />,
+    name: "liya", color: " #23297a", border:'3px solid #23297a',
+    
+    formData: {
+      id: 1, FormName: 'Registration Form ', FormDescription: 'Sample description', Questions: [
+        { Field: 'Full Name', FieldType: 'Short Text', answer: "" },
+        { Field: 'Email Id', FieldType: 'Short Text', answer: "" },
+        { Field: 'Phone Number', FieldType: 'Short Text', answer: "" },
+        { Field: 'Gender', FieldType: 'Radio Buttons', options: ["Male", "Female", "Other"], answer: "" },
+        { Field: 'Marital Status', FieldType: 'DropDown', options: ["Single", "Married", "Not prefer to say"], answer: "" },
+        { Field: 'About', FieldType: 'Paragraph', answer: "" },
+      ]
+    }
+    
+  }
+
+--2.feedback form---
+{
+    image: <img alt="image" src={feedbackimage} width="100%" height="250px"  />,
+   color: " #23297a", border:'3px solid #006400',backgroundColor:'#f0ffff',
+    buttoncolor:'success',
+    
+    formData: {
+      id: 1, FormName: 'Feedback Form ', FormDescription: 'Sample feedback form', Questions: [
+        { Field: ' Name', FieldType: 'Short Text', answer: "" },
+        { Field: 'Email Id', FieldType: 'Short Text', answer: "" },
+        { Field: 'Feedback Type', FieldType: 'Radio Buttons', options: ["Comments", "Questions", "Bug Reports","New Feature Request"], answer: "" },
+        { Field: 'Feedback', FieldType: 'Long Text', answer: "" },
+        { Field: 'Suggestions for improvement', FieldType: 'Long Text', answer: "" }
+     
+        // { Field: 'sample questn Long Text', FieldType: 'Long Text', answer: "" },
+        // { Field: 'sample questn', FieldType: 'StarRating', answer: "" },
+      ]
+    }
+    
+  }
+
+--3.assessment form--
+{
+    image: <img alt="image" src={assessmentimage} width="100%" height="250px"  />,
+   color: " #23297a", border:'3px solid #8e3a59',backgroundColor:'#faf0e6',
+    buttoncolor:'success',
+    
+    formData: {
+      id: 1, FormName: 'Assessment ', FormDescription: 'Sample assessment form', Questions: [
+        { Field: ' Name', FieldType: 'Short Text', answer: "" },
+        { Field: 'Email Id', FieldType: 'Short Text', answer: "" },
+        { Field: 'Your first question', FieldType: 'Radio Buttons', options: ["Option 1", "Option 2", "Option 3","Option 4"], answer: "" },
+        { Field: 'Your second question', FieldType: 'Radio Buttons', options: ["Option 1", "Option 2", "Option 3","Option 4"], answer: "" },
+        { Field: 'Your third question', FieldType: 'Long Text', answer: "" }
+     
+        // { Field: 'sample questn Long Text', FieldType: 'Long Text', answer: "" },
+        // { Field: 'sample questn', FieldType: 'StarRating', answer: "" },
+      ]
+    }
+    
+  }
+--4.contact form--
+{
+    image: <img alt="image" src={contactformimage} width="100%" height="250px"  />,
+   color: " #23297a", border:'3px solid #696969',backgroundColor:'#f8f4ff',
+    buttoncolor:'success',
+    
+    formData: {
+      id: 1, FormName: 'Contact Form ', FormDescription: 'Sample contact form', Questions: [
+        { Field: ' Name', FieldType: 'Short Text', answer: "" },
+        { Field: 'Email Id', FieldType: 'Short Text', answer: "" },
+        { Field: 'Address', FieldType: 'Long Text', answer: "" },
+        { Field: 'Phone number', FieldType: 'Short Text', answer: "" },
+        { Field: 'comments', FieldType: 'Long Text', answer: "" },
+       
+     
+        
+        // { Field: 'sample questn', FieldType: 'StarRating', answer: "" },
+      ]
+    }
+    
+  }

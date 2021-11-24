@@ -139,24 +139,105 @@
           "fieldType": 2,
           "answer": "I donk know"
         }
-      ]
-    }
-  ],
-  "form_template": [
-    {
-      "id": 1,
-      "form_template_name": "blank",
-      "form_template_format": {
-        "form_name": "Java Quize",
-        "form_description": "Thuis is sample form",
-        "Questions": [
-          {
-            "field": "enter name :",
-            "fieldType": 2
-          }
-        ]
-      },
-      "form_type_id": 6
-    }
-  ]
+    ],
+    "formType": [
+        {
+            "id": 1,
+            "form_type_name": "Registration"
+        },
+        {
+            "id": 2,
+            "form_type_name": "Quiz"
+        }
+    ],
+    "fieldType": [
+        {
+            "id": 1,
+            "field_type_name": "Short Text"
+        },
+        {
+            "id": 2,
+            "field_type_name": "Long Text"
+        },
+        {
+            "id": 3,
+            "field_type_name": "Radio Buttons"
+        },
+        {
+            "id": 4,
+            "field_type_name": "Dropdown"
+        }
+    ],
+    "forms": [
+        {
+            "id": 1,
+            "form_type_id": 6,
+            "form_Name": "Java Quiz",
+            "form_data": {
+                "form_name": "Java Quize",
+                "form_description": "Thuis is sample form",
+                "Questions": [
+                    {
+                        "field": "enter name :",
+                        "fieldType": 2
+                    }
+                ],
+                "user_id": 1,
+                "is_form_saved": false,
+                "publish_url": null,
+                "form_template_id": 1
+            }
+        },
+        {
+            "id": 2,
+            "form_type_id": 6,
+            "form_Name": "Java Quiz",
+            "form_data": {
+                "form_name": "Java Quize",
+                "form_description": "Thuis is sample form",
+                "Questions": [
+                    {
+                        "field": "enter name :",
+                        "fieldType": 2
+                    }
+                ],
+                "user_id": 1,
+                "is_form_saved": false,
+                "publish_url": null,
+                "form_template_id": 1
+            }
+        }
+    ],
+    "responses": [
+        {
+            "id": 1,
+            "form_id": 1,
+            "response": [
+                {
+                    "field": "enter name",
+                    "fieldType": 2,
+                    "answer": "I donk know"
+                }
+            ]
+        }
+    ],
+    "form_template":[
+        {
+            "id":1,
+            "form_template_name":"blank",
+            "form_template_format": {
+                "form_name": "Java Quize",
+                "form_description": "Thuis is sample form",
+                "Questions": [
+                    {
+                        "field": "enter name :",
+                        "fieldType": 2
+                    }
+                ]
+            },
+            "form_type_id":6
+        }
+        
+
+    ]
 }
